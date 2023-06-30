@@ -15,21 +15,24 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
-  </head>
+    <script src="main.js" defer></script>
+
+</head>
   <body>
-    <section id="navbar"></section>
+    <section id="navbar">
+
+    </section>
 
     <section id="title">
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-12 col-lg-6" id="title-main">
-                <img draggable="false" id="title-pic" src="images/title-pic.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              <div class="col-8 col-sm-12 col-lg-6" id="title-main">
+                <img draggable="false" id="title-pic" src="images/title-pic.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes">
               </div>
               <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Cơ Sở Mộc Hiệp</h1>
+                <h1 class="display-5 fw-bold text-info-emphasis lh-1 mb-3">Cơ Sở Mộc Hiệp</h1>
                 <p class="lead">
                     Cơ Sở Mộc Hiệp là một cơ sở sản xuất đồ gỗ chất lượng cao với hơn 15 năm kinh nghiệm. Sử dụng gỗ tự nhiên và 
                     công nghệ hiện đại, chúng tôi tạo ra những sản phẩm đẹp mắt và bền bỉ. Từ bàn ghế, tủ kệ đến sản phẩm trang trí, 
@@ -47,7 +50,7 @@
 
     <section id="feature">
         <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom text-body-emphasis">Dịch Vụ</h2>
+            <h2 class="pb-2 border-bottom text-info-emphasis">Dịch Vụ</h2>
         
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
               <div class="col">
@@ -120,7 +123,7 @@
         <div class="container my-5">
             <div class="p-5 text-center bg-body-tertiary rounded-3 border">
                 <img src="images/profile-pic.JPG" width="95px" id="profile-pic">
-              <h1 class="text-body-emphasis">Về Chúng Tôi</h1>
+              <h1 class="text-dark-emphasis">Về Chúng Tôi</h1>
               <p class="col-lg-8 mx-auto fs-5 text-muted">
                 Chúng tôi chuyên sản xuất những tác phẩm gỗ độc đáo, mang trong mình vẻ đẹp tự nhiên và sự tỉ mỉ từng chi tiết. Tự hào là người thợ mộc truyền thống, tôi và đội ngũ tài năng của chúng tôi đã tạo ra những bức tranh sống động từ những thớ gỗ, tạo nên không gian ấm cúng và sang trọng. 
               </p>
@@ -167,12 +170,14 @@
                 <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Cơ Sở Mộc Hiệp</span>
               </div>
           
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-emphasis" href="https://www.facebook.com/cosomochiep"><img src="images/logos/facebook.png" alt="" width="30px"></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="https://zalo.me/0914679139"><svg class="bi" width="24" height="24"><img src="images/logos/zalo.png" alt="" width="20px"></a></li>
-              </ul>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-emphasis" href="https://www.facebook.com/cosomochiep"><img src="images/logos/facebook.png" alt="" width="24px"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="https://zalo.me/0914679139"><svg class="bi" width="24" height="24"><img src="images/logos/zalo.png" alt="" width="20px"></a></li>
+                </ul>
+                <button id="dark-mode" onclick="changeTheme()">🌞</button>
             </footer>
           </div>
     </section>
+
   </body>
 </html>
