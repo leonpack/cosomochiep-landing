@@ -1,0 +1,33 @@
+/* 
+    color palette
+    #388087 (teal blue)
+    #6FB388 (moonstroke blue)
+    #BADFE7 (powder blue)
+    #C2EDCE (MAGIN MINT)
+    #F6F6F2 (white smoke)
+
+*/
+
+#title-main {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+#title-pic {
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+#title-pic:hover {
+    object-fit: cover;
+    transform: scale(1.2);
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
